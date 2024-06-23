@@ -14,9 +14,10 @@ const s = document.getElementById("b3")
 let btn = document.getElementById("btn")
 let P1 = document.getElementById("p1")
 let P2 = document.getElementById("p2")
-let P = document.getElementById("p*")
+let P = document.getElementById("point")
 let TA = document.getElementById("TA")
 let R = document.getElementById("Re")
+
 
 let timerclear
 let timerclear2
@@ -83,7 +84,7 @@ d.onclick = function () {
     btn.style.visibility = "visible"
   }, 3000)
   setTimeout(() => {
-    P.style.display = "flex"
+    P.style.visibility="visible"
   }, 1000)
   d.style.display = "none"
   setTimeout(() => {
@@ -109,7 +110,6 @@ r.onclick = function () {
 
 
 p.onclick = function () {
-  console.log("p")
   clearInterval(timerclear)
   clearInterval(timerclear2)
   e.style.display = "none"
@@ -121,8 +121,7 @@ p.onclick = function () {
   btn.style.display = "none"
   document.getElementById("txt").style.display = "flex"
   again += 2
-  console.log(again)
-  console.log(Udata)
+ 
 
 }
 s.onclick = function () {
@@ -189,7 +188,7 @@ TA.onclick = function () {
   setTimeout(() => {
     btn.style.display = "flex"
   }, 3000)
-  TA.style.display = "none"
+  TA.style.visibility="hidden"
 
 
   Udata.splice(0, Udata.length)
@@ -227,7 +226,7 @@ function gamelogic() {
       }, 1000)
     }
     setTimeout(() => {
-      TA.style.display = "flex"
+      TA.style.visibility="visible"
     }, 3000)
     setTimeout(() => {
       document.getElementById("h-3").innerHTML = "\"MATCH TIED\""
@@ -241,7 +240,7 @@ function gamelogic() {
   else if (user == "rock" && comp == "paper") {
     again2 += 2
     setTimeout(() => {
-      TA.style.display = "flex"
+      TA.style.visibility="visible"
     }, 3000)
     a.style.display = "none"
     setTimeout(() => {
@@ -258,7 +257,7 @@ function gamelogic() {
   else if (user == "rock" && comp == "scissor") {
     again2 += 3
     setTimeout(() => {
-      TA.style.display = "flex"
+      TA.style.visibility="visible"
     }, 3000)
     a.style.display = "none"
     setTimeout(() => {
@@ -275,7 +274,7 @@ function gamelogic() {
   else if (user == "scissor" && comp == "rock") {
     again2 += 1
     setTimeout(() => {
-      TA.style.display = "flex"
+      TA.style.visibility="visible"
     }, 3000)
     a.style.display = "none"
     setTimeout(() => {
@@ -292,7 +291,7 @@ function gamelogic() {
   else if (user == "scissor" && comp == "paper") {
     again2 += 2
     setTimeout(() => {
-      TA.style.display = "flex"
+      TA.style.visibility="visible"
     }, 3000)
     a.style.display = "none"
     setTimeout(() => {
@@ -309,7 +308,7 @@ function gamelogic() {
   else if (user == "paper" && comp == "scissor") {
     again2 += 3
     setTimeout(() => {
-      TA.style.display = "flex"
+      TA.style.visibility="visible"
     }, 3000)
     a.style.display = "none"
     setTimeout(() => {
@@ -326,7 +325,7 @@ function gamelogic() {
   else if (user == "paper" && comp == "rock") {
     again2 += 1
     setTimeout(() => {
-      TA.style.display = "flex"
+      TA.style.visibility="visible"
     }, 3000)
     a.style.display = "none"
     setTimeout(() => {

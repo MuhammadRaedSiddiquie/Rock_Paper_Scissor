@@ -25,6 +25,7 @@ margin-top: 15px;
 }
 .score{
     display: flex;
+    visibility: hidden;
 }
 .points{
     font-size: 55px;
@@ -58,7 +59,8 @@ margin-top: 15px;
     
 }
 .again{
-    display: none;
+    display: flex;
+    visibility: hidden;
     justify-content: center;
     align-items: center;
     width: 160px;
@@ -75,8 +77,7 @@ margin-top: 15px;
 .hands{
     display: flex;
     gap: 20vw;
-    padding-bottom: 15px;
-    margin-bottom: 12px;
+  
 }
 .hand1{
     display: flex;
