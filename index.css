@@ -17,7 +17,7 @@
     color: rgb(86, 41, 7);
     font-size:24px;
 margin-top: 15px;
-    font-family: cursive,monospace, sans-serif;
+    font-family:"LXGW WenKai Mono TC",monospace, sans-serif;
     font-weight: bold;
 
     font-style: normal;
@@ -38,7 +38,7 @@ margin-top: 15px;
     font-size: 70px;
     color: rgb(86, 41, 7);
     margin: 25px;
-    font-family: cursive;
+    font-family: "LXGW WenKai Mono TC";
     width: 60px;
 }
 .play{
@@ -213,7 +213,7 @@ margin-top: 15px;
     color: rgb(70, 32, 0);
     font-size: 26px;
     
-    font-family: cursive,monospace;
+    font-family: "LXGW WenKai Mono TC",monospace;
 
    
 }
@@ -222,7 +222,7 @@ margin-top: 15px;
     font-size: 32px;
     
     font-weight: bold;
-   font-family: cursive,monospace;
+   font-family: "LXGW WenKai Mono TC",monospace;
    margin-top: 15px;
 }
 @media(max-width:475px){
